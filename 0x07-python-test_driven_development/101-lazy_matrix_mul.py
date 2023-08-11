@@ -1,8 +1,16 @@
 #!/usr/bin/python3
 
-lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+"""This module contains a function that multiplies two matrices"""
+
+import numpy as np
 
 
-print(lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+def lazy_matrix_mul(m_a, m_b):
+    """Return the multiplication of two matrices.
+    Args:
+        m_a (list of lists of ints/floats): The first matrix.
+        m_b (list of lists of ints/floats): The second matrix.
+    """
 
-print(lazy_matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+    return (np.matmul(m_a, m_b))
